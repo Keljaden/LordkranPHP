@@ -4,5 +4,5 @@
 </form>
 <?php
 $name=$_GET['name'];
-echo strrev($name);
+echo mb_convert_encoding(strrev(mb_convert_encoding($name, 'UTF-16BE', 'UTF-8')), 'UTF-8', 'UTF-16LE');
 ?>
