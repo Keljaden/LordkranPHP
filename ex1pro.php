@@ -14,7 +14,6 @@ function array_fill_rand($limit, $min=false, $max=false)
             $array[$i] = rand($min, $max);
         }
     }
-
     return $array;
 }
 
@@ -26,8 +25,6 @@ echo "минимальное значение " .(min($rand_array))  . "\n";
 echo "максимальное значение " . (max($rand_array))  . "\n";
 $average = array_sum($rand_array) / count($rand_array);
 echo "Среднее по массиву " .$average . "\n";
-
-
 
 echo '</pre>';
 
